@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="pl" data-theme="">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Gry — MSLG Studios</title>
+
+  <!-- SEO -->
+  <meta name="description" content="Gry MSLG Studios — Legends of Wpierdol i więcej. Terminalowe RPG w C++." />
+
+  <!-- Open Graph -->
+  <meta property="og:type"        content="website" />
+  <meta property="og:title"       content="Gry — MSLG Studios" />
+  <meta property="og:description" content="Gry MSLG Studios — Legends of Wpierdol i więcej." />
+
+  <!-- Favicon placeholder -->
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' fill='%23111'/><text y='24' font-size='22' fill='%2300ff66'>M</text></svg>" />
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ░░ LOADING SCREEN ░░ -->
+  <div id="loading-screen" aria-hidden="true">
+    <div class="loading-logo">MSLG STUDIOS</div>
+    <div class="loading-bar-wrap">
+      <div class="loading-bar-fill"></div>
+    </div>
+    <div class="loading-text" data-i18n="loading_text">URUCHAMIANIE SYSTEMU...</div>
+  </div>
+
+  <!-- ░░ DESKTOP NAV ░░ -->
+  <nav class="nav-desktop" aria-label="Nawigacja główna">
+    <span class="nav-brand">MSLG_STUDIOS<span class="cursor"></span></span>
+    <ul class="nav-links">
+      <li><a href="index.html" data-page="index.html" data-i18n="nav_home">Strona Główna</a></li>
+      <li><a href="games.html" data-page="games.html" data-i18n="nav_games">Gry</a></li>
+      <li><button class="nav-btn" data-action="toggle-lang" data-i18n="nav_lang">EN</button></li>
+      <li><button class="nav-btn" data-action="toggle-theme" aria-label="Zmień motyw">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="5"/><path d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42"/></svg>
+        <span data-i18n="nav_theme">Motyw</span>
+      </button></li>
+    </ul>
+  </nav>
+
+  <!-- ░░ MOBILE NAV ░░ -->
+  <nav class="nav-mobile" aria-label="Nawigacja mobilna">
+    <a href="index.html" class="nav-mobile-item" data-page="index.html" aria-label="Strona główna">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
+      <span data-i18n="nav_home">Home</span>
+    </a>
+    <a href="games.html" class="nav-mobile-item" data-page="games.html" aria-label="Gry">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="6" width="20" height="12" rx="2"/><path d="M12 12h.01M7 12h.01M17 12h.01M12 7v.01M12 17v.01"/></svg>
+      <span data-i18n="nav_games">Gry</span>
+    </a>
+    <button class="nav-mobile-item" data-action="toggle-lang" aria-label="Zmień język">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M2 12h20M12 2a15.3 15.3 0 010 20M12 2a15.3 15.3 0 000 20"/></svg>
+      <span data-i18n="nav_lang">EN</span>
+    </button>
+    <button class="nav-mobile-item" data-action="toggle-theme" aria-label="Zmień motyw">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="5"/><path d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42"/></svg>
+      <span data-i18n="nav_theme">Motyw</span>
+    </button>
+  </nav>
+
+  <!-- ░░ MAIN CONTENT ░░ -->
+  <main class="page-content">
+
+    <h1 class="section-title reveal" data-i18n="games_heading">Nasze Gry</h1>
+
+    <div class="games-grid">
+
+      <!--
+        ══════════════════════════════════════════════════════
+        GAME CARD #1 — Legends of Wpierdol
+        ADD NEW GAMES: duplicate this .win-window block below.
+        Update: href, game1_title/desc/tag keys (or hardcode),
+                and the image src.
+        ══════════════════════════════════════════════════════
+      -->
+      <a href="game-legends-of-wpierdol.html" class="win-window game-card reveal" aria-label="Legends of Wpierdol — przejdź do strony gry">
+        <div class="game-card-info">
+          <h2 class="game-card-title" data-i18n="game1_title">Legends of Wpierdol</h2>
+          <p class="game-card-desc" data-i18n="game1_desc">Terminalowa gra RPG z systemem walki Turn-Based.</p>
+          <span class="game-card-tag" data-i18n="game1_tag">C++ / TERMINAL RPG</span>
+        </div>
+        <div class="game-card-image">
+          <!--
+            Replace the placeholder div below with:
+            <img src="screenshot1.png" alt="Legends of Wpierdol screenshot" />
+            when a cover image is available.
+          -->
+            <img src="screenshot1.png" alt="Legends of Wpierdol screenshot" />
+        </div>
+      </a>
+
+      <!--
+        GAME CARD TEMPLATE (copy & paste to add a new game):
+
+        <a href="game-NEW-GAME.html" class="win-window game-card reveal" aria-label="Tytuł gry">
+          <div class="game-card-info">
+            <h2 class="game-card-title">Tytuł Gry</h2>
+            <p class="game-card-desc">Krótki opis gry.</p>
+            <span class="game-card-tag">GATUNEK</span>
+          </div>
+          <div class="game-card-image">
+            <img src="cover-new-game.png" alt="Screenshot" />
+          </div>
+        </a>
+      -->
+
+    </div>
+  </main>
+
+  <!-- ░░ FOOTER ░░ -->
+  <footer class="site-footer">
+    <span data-i18n="footer_text">© 2026 MSLG Studios — Wszelkie prawa zastrzeżone.</span>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
