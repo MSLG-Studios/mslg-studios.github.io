@@ -47,6 +47,9 @@ const TRANSLATIONS = {
 
     /* ── footer ── */
     footer_text:   '© 2026 MSLG Studios — Wszelkie prawa zastrzeżone.',
+     // pl:
+		launcher_banner: 'Zmęczony pobieraniem gier ze strony? Wypróbuj nasz desktopowy launcher!',
+
   },
 
   en: {
@@ -86,6 +89,9 @@ const TRANSLATIONS = {
 
     /* ── footer ── */
     footer_text:   '© 2026 MSLG Studios — All rights reserved.',
+
+// en:
+	launcher_banner: 'Tired of downloading games from the website? Try our desktop launcher!',
   }
 };
 
