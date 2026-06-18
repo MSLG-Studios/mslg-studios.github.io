@@ -835,3 +835,38 @@ body::after {
 .reveal:nth-child(3) { transition-delay: 0.19s; }
 .reveal:nth-child(4) { transition-delay: 0.26s; }
 .reveal:nth-child(5) { transition-delay: 0.33s; }
+
+/* ── Launcher banner (games.html) ── */
+.launcher-banner {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 12px 20px;
+  border: 1px solid var(--accent-dim);
+  background: var(--accent-glow);
+  color: var(--text);
+  font-size: 0.82rem;
+  letter-spacing: 1px;
+  text-decoration: none;
+  transition: all 0.15s;
+  margin-bottom: 8px;
+}
+
+.launcher-banner:hover {
+  border-color: var(--accent);
+  background: rgba(0,255,102,0.12);
+  color: var(--accent);
+  text-decoration: none;
+  text-shadow: 0 0 8px var(--accent);
+}
+
+.launcher-banner-icon { font-size: 1rem; flex-shrink: 0; }
+
+.launcher-banner-text { flex: 1; }
+
+.launcher-banner-arrow {
+  font-size: 1rem;
+  color: var(--accent);
+  flex-shrink: 0;
+  opacity: 0.7;
+}
